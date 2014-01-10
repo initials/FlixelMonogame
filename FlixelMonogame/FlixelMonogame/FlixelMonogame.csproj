@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4814AAD0-A97B-479C-B475-F5645F991410}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FlixelMonogame</RootNamespace>
+    <AssemblyName>FlixelMonogame</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\WindowsGL\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\WindowsGL\Release\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="FlixelEntryPoint.cs" />
+    <Compile Include="Flixel\data\FlxAnim.cs" />
+    <Compile Include="Flixel\data\FlxConsole.cs" />
+    <Compile Include="Flixel\data\FlxFactory.cs" />
+    <Compile Include="Flixel\data\FlxFade.cs" />
+    <Compile Include="Flixel\data\FlxFlash.cs" />
+    <Compile Include="Flixel\data\FlxGamepad.cs" />
+    <Compile Include="Flixel\data\FlxGlobal.cs" />
+    <Compile Include="Flixel\data\FlxHud.cs" />
+    <Compile Include="Flixel\data\FlxKeyboard.cs" />
+    <Compile Include="Flixel\data\FlxList.cs" />
+    <Compile Include="Flixel\data\FlxLogoPixel.cs" />
+    <Compile Include="Flixel\data\FlxMouse.cs" />
+    <Compile Include="Flixel\data\FlxParticle.cs" />
+    <Compile Include="Flixel\data\FlxPause.cs" />
+    <Compile Include="Flixel\data\FlxQuake.cs" />
+    <Compile Include="Flixel\data\FlxSplash.cs" />
+    <Compile Include="Flixel\FlxButton.cs" />
+    <Compile Include="Flixel\FlxCaveGenerator.cs" />
+    <Compile Include="Flixel\FlxCaveGeneratorExt.cs" />
+    <Compile Include="Flixel\FlxEmitter.cs" />
+    <Compile Include="Flixel\FlxEvents.cs" />
+    <Compile Include="Flixel\FlxG.cs" />
+    <Compile Include="Flixel\FlxGame.cs" />
+    <Compile Include="Flixel\FlxGroup.cs" />
+    <Compile Include="Flixel\FlxMonitor.cs" />
+    <Compile Include="Flixel\FlxObject.cs" />
+    <Compile Include="Flixel\FlxOnlineStatCounter.cs" />
+    <Compile Include="Flixel\FlxPath.cs" />
+    <Compile Include="Flixel\FlxQuadTree.cs" />
+    <Compile Include="Flixel\FlxRect.cs" />
+    <Compile Include="Flixel\FlxSave.cs" />
+    <Compile Include="Flixel\FlxSound.cs" />
+    <Compile Include="Flixel\FlxSprite.cs" />
+    <Compile Include="Flixel\FlxState.cs" />
+    <Compile Include="Flixel\FlxText.cs" />
+    <Compile Include="Flixel\FlxTileblock.cs" />
+    <Compile Include="Flixel\FlxTilemap.cs" />
+    <Compile Include="Flixel\FlxTransition.cs" />
+    <Compile Include="Flixel\FlxU.cs" />
+    <Compile Include="Flixel\FlxXMLReader.cs" />
+    <Compile Include="fx\BloomComponent.cs" />
+    <Compile Include="fx\BloomSettings.cs" />
+    <Compile Include="Game1.cs" />
+    <Compile Include="mode\Bot.cs" />
+    <Compile Include="mode\BotBullet.cs" />
+    <Compile Include="mode\Bullet.cs" />
+    <Compile Include="mode\MenuState.cs" />
+    <Compile Include="mode\Multiplayer\BulletMulti.cs" />
+    <Compile Include="mode\Multiplayer\PlayerMulti.cs" />
+    <Compile Include="mode\Multiplayer\PlayStateMulti.cs" />
+    <Compile Include="mode\Multiplayer\VictoryStateMulti.cs" />
+    <Compile Include="mode\Player.cs" />
+    <Compile Include="mode\PlayState.cs" />
+    <Compile Include="mode\PlayStateTiles.cs" />
+    <Compile Include="mode\Spawner.cs" />
+    <Compile Include="mode\VictoryState.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Flixel\SafeArea.cs" />
+    <Compile Include="XNATweener\Back.cs" />
+    <Compile Include="XNATweener\Bounce.cs" />
+    <Compile Include="XNATweener\Circular.cs" />
+    <Compile Include="XNATweener\Cubic.cs" />
+    <Compile Include="XNATweener\Elastic.cs" />
+    <Compile Include="XNATweener\Exponential.cs" />
+    <Compile Include="XNATweener\Linear.cs" />
+    <Compile Include="XNATweener\Quadratic.cs" />
+    <Compile Include="XNATweener\Quartic.cs" />
+    <Compile Include="XNATweener\Quintic.cs" />
+    <Compile Include="XNATweener\Sinusoidal.cs" />
+    <Compile Include="XNATweener\Tweener.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="OpenTK">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\MSBuild\..\MonoGame\v3.0\Assemblies\WindowsGL\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\MSBuild\..\MonoGame\v3.0\Assemblies\WindowsGL\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Lidgren.Network">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\MSBuild\..\MonoGame\v3.0\Assemblies\WindowsGL\Lidgren.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="Tao.Sdl">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\MSBuild\..\MonoGame\v3.0\Assemblies\WindowsGL\Tao.Sdl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\flixel\beep.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\flixel\flixel.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\initials\initials_empire_tagtone3.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\mode\asplode.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\mode\countdown.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\mode\enemy.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\mode\hit.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\mode\hurt.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\mode\jam.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\mode\jet.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\mode\jump.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\mode\land.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\mode\menu_hit.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\mode\menu_hit_2.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\mode\mode.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\mode\shoot.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icon.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Content\flixel\autotiles.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\flixel\autotiles_alt.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\flixel\cursor.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\flixel\deffont.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\flixel\keys_arrows.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\flixel\key_0.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\flixel\key_1.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\flixel\key_c.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\flixel\key_minus.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\flixel\key_mouse.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\flixel\key_plus.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\flixel\key_x.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\flixel\poweredby.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\flixel\transition_30x30.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\flixel\transition_40x40.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\flixel\xna_tiles.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\fx\BloomCombine">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\fx\BloomExtract">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\fx\GaussianBlur">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\initials\initialsLogo.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\mode\bot.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\mode\bot_bullet.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\mode\bubble.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\mode\bullet.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\mode\cursor.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\mode\dirt.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\mode\dirt_top.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\mode\gibs.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\mode\jetsmoke.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\mode\notch.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\mode\spaceman.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\mode\spawner.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\mode\spawner_gibs.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\mode\tech_autotiles.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\mode\tech_tiles.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\mode\tiles_all.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\buttons\BP3_SSTRIP_32.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\buttons\BP3_SSTRIP_48.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\buttons\BP3_SSTRIP_64.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="mode\level1.oel" />
+    <None Include="mode\ModeProject.oep" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
