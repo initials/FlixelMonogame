@@ -26,7 +26,7 @@ namespace XNAMode
 		private int _bulletVel;
 		private bool _up;
 		private bool _down;
-		private float _restart;
+		//private float _restart = 0.0f;
 		private FlxEmitter _gibs;
 
         public PlayerIndex? controller;
@@ -58,12 +58,12 @@ namespace XNAMode
             //_playback = false;
             frameCount = 0;
 
-            
+            //_restart = 0.0f;
 
             ImgSpaceman = FlxG.Content.Load<Texture2D>("Mode/spaceman");
 
 			loadGraphic(ImgSpaceman,true,true,8);
-			_restart = 0;
+			
 			
 			//bounding box tweaks
 			width = 6;

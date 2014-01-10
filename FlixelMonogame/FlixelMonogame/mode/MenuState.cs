@@ -221,9 +221,31 @@ namespace XNAMode
 
 			base.update();
 
+            // exit.
+            if (FlxG.keys.justPressed(Keys.Escape))
+            {
+                //FlxG.state = new FourChambers.GameSelectionMenuState();
+                return;
+            }
 
-
-
+            if (FlxG.keys.justPressed(Keys.F2) || FlxG.gamepads.isNewButtonPress(Buttons.A, PlayerIndex.Two, out pi) )
+            {
+                Mode_Globals.PLAYERS = 2;
+                FlxG.state = new PlayStateMulti();
+                return;
+            }
+            if (FlxG.keys.justPressed(Keys.F3) || FlxG.gamepads.isNewButtonPress(Buttons.A, PlayerIndex.Three, out pi))
+            {
+                Mode_Globals.PLAYERS = 3;
+                FlxG.state = new PlayStateMulti();
+                return;
+            }
+            if (FlxG.keys.justPressed(Keys.F4) || FlxG.gamepads.isNewButtonPress(Buttons.A, PlayerIndex.Four, out pi))
+            {
+                Mode_Globals.PLAYERS = 4;
+                FlxG.state = new PlayStateMulti();
+                return;
+            }
 
 
 		}

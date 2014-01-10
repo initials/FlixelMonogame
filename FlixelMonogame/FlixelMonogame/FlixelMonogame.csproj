@@ -82,7 +82,9 @@
     <Compile Include="mode\Bot.cs" />
     <Compile Include="mode\BotBullet.cs" />
     <Compile Include="mode\Bullet.cs" />
-    <Compile Include="mode\MenuState.cs" />
+    <Compile Include="mode\MenuState.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="mode\Multiplayer\BulletMulti.cs" />
     <Compile Include="mode\Multiplayer\PlayerMulti.cs" />
     <Compile Include="mode\Multiplayer\PlayStateMulti.cs" />
@@ -94,7 +96,6 @@
     <Compile Include="mode\VictoryState.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Flixel\SafeArea.cs" />
     <Compile Include="XNATweener\Back.cs" />
     <Compile Include="XNATweener\Bounce.cs" />
     <Compile Include="XNATweener\Circular.cs" />
