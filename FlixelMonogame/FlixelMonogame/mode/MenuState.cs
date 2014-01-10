@@ -44,6 +44,8 @@ namespace XNAMode
 
             FlxG.hideHud();
 
+            
+
             ImgGibs = FlxG.Content.Load<Texture2D>("Mode/spawner_gibs");
             ImgCursor = FlxG.Content.Load<Texture2D>("Mode/cursor");
 
