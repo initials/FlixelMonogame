@@ -295,8 +295,12 @@
     <None Include="Content\buttons\BP3_SSTRIP_64.xnb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="mode\level1.oel" />
-    <None Include="mode\ModeProject.oep" />
+    <None Include="mode\level1.oel">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="mode\ModeProject.oep">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
