@@ -126,7 +126,7 @@ namespace org.flixel
             Dictionary<string, string> levelAttrs = new Dictionary<string, string>();
 
             XmlDocument xml = new XmlDocument();
-            xml.Load(filename);
+             xml.Load(filename);
             //Console.WriteLine("Node Name: {0} ", element);
             XmlNodeList xnList = xml.SelectNodes(element);
             foreach (XmlNode xn in xnList)

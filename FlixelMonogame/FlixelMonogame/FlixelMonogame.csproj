@@ -233,13 +233,13 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Icon.ico" />
-    <Content Include="Revvolvver\Level1_FourPlayerData.txt">
+    <Content Include="Level1_FourPlayerData.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Revvolvver\Level1_ThreePlayerData.txt">
+    <Content Include="Level1_ThreePlayerData.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Revvolvver\Level1_TwoPlayerData.txt">
+    <Content Include="Level1_TwoPlayerData.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

@@ -43,9 +43,9 @@ namespace XNAMode
             int h = 360;
             initGame(w, h, new Revvolvver.MenuState(), new Color(15, 15, 15), true, new Color(5, 5, 5));
 
-            FlxG.debug = true;
+            FlxG.debug = false;
             FlxG.zoom = 1280 / w;
-            FlxG.level = -1;
+            FlxG.level = 1;
 
             FourChambers_Globals.BUILD_TYPE = FourChambers_Globals.BUILD_TYPE_RELEASE;
             FourChambers_Globals.DEMO_VERSION = false;
