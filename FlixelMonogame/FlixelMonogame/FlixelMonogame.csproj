@@ -94,8 +94,23 @@
     <Compile Include="mode\PlayStateTiles.cs" />
     <Compile Include="mode\Spawner.cs" />
     <Compile Include="mode\VictoryState.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Revvolvver\Bomb.cs" />
+    <Compile Include="Revvolvver\Bot.cs" />
+    <Compile Include="Revvolvver\BotBullet.cs" />
+    <Compile Include="Revvolvver\Bullet.cs" />
+    <Compile Include="Revvolvver\Cloud.cs" />
+    <Compile Include="Revvolvver\MenuState.cs" />
+    <Compile Include="Revvolvver\Multiplayer\BulletMulti.cs" />
+    <Compile Include="Revvolvver\Multiplayer\PlayerMulti.cs" />
+    <Compile Include="Revvolvver\Multiplayer\PlayStateMulti.cs" />
+    <Compile Include="Revvolvver\Multiplayer\VictoryStateMulti.cs" />
+    <Compile Include="Revvolvver\Player.cs" />
+    <Compile Include="Revvolvver\PlayState.cs" />
+    <Compile Include="Revvolvver\PlayStateTiles.cs" />
+    <Compile Include="Revvolvver\PowerUp.cs" />
+    <Compile Include="Revvolvver\Spawner.cs" />
+    <Compile Include="Revvolvver\VictoryState.cs" />
     <Compile Include="XNATweener\Back.cs" />
     <Compile Include="XNATweener\Bounce.cs" />
     <Compile Include="XNATweener\Circular.cs" />
@@ -175,7 +190,58 @@
     <Content Include="Content\mode\shoot.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\Revvolvver\sfx\asong.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Revvolvver\sfx\chord_01.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Revvolvver\sfx\chord_02.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Revvolvver\sfx\chord_03.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Revvolvver\sfx\chord_04.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Revvolvver\sfx\chord_05.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Revvolvver\sfx\chord_06.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Revvolvver\sfx\chord_07.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Revvolvver\sfx\fullHeavyMetalJacket.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Revvolvver\sfx\gunclick.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Revvolvver\sfx\gunshot1.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Revvolvver\sfx\gunshot2.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Revvolvver\sfx\gunshot3.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Revvolvver\sfx\spx.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Icon.ico" />
+    <Content Include="Revvolvver\Level1_FourPlayerData.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Revvolvver\Level1_ThreePlayerData.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Revvolvver\Level1_TwoPlayerData.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -236,7 +302,13 @@
     <None Include="Content\fx\GaussianBlur">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Content\initials\crosshair.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Content\initials\initialsLogo.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\initials\SpaceMarine.xnb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Content\mode\bot.xnb">
@@ -296,10 +368,91 @@
     <None Include="Content\buttons\BP3_SSTRIP_64.xnb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Content\Revvolvver\bg.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Revvolvver\bomb.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Revvolvver\bot_bullet.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Revvolvver\bullet.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Revvolvver\cloud.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Revvolvver\flower.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Revvolvver\flowersmall.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Revvolvver\flowersmallblue.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Revvolvver\gibs.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Revvolvver\movingPlatform.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Revvolvver\notch.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Revvolvver\spaceman.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Revvolvver\spawner_gibs.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Revvolvver\square_tiles_16x16.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Revvolvver\tech_tiles.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="mode\level1.oel">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="mode\ModeProject.oep">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Revvolvver\level1.oel">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Revvolvver\level2.oel">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Revvolvver\level3.oel">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Revvolvver\level4.oel">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Revvolvver\level5.oel">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Revvolvver\level6.oel">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Revvolvver\level7.oel">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Revvolvver\level8.oel">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Revvolvver\level9.oel">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Revvolvver\level_template.oel">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Revvolvver\RevvolvverProject.oep">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Revvolvver\titlescreen.oel">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

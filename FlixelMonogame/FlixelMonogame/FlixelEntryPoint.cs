@@ -33,27 +33,15 @@ namespace XNAMode
             : base(game)
         {
 
-            int w = 320;
-            int h = 180;
-
-            initGame(w, h, new XNAMode.MenuState(), new Color(15, 15, 15), true, new Color(5, 5, 5));
-                
-            
-            //initGame(w, h, new EmptyIntroTestState(), new Color(15, 15, 15), false, new Color(5, 5, 5));
-
-            //initGame(w, h, new BasePlayStateFromOel(), new Color(15, 15, 15), false, new Color(5, 5, 5));
-
-            //initGame(w, h, new CharacterSelectionState(), new Color(15, 15, 15), true, new Color(5, 5, 5));
-
-            //initGame(w, h, new BasePlayStateFromOel(), new Color(15, 15, 15), false, new Color(5, 5, 5));
+            // Mode
+            //int w = 320;
+            //int h = 180;
+            //initGame(w, h, new XNAMode.MenuState(), new Color(15, 15, 15), true, new Color(5, 5, 5));
 
 
-            //initGame(w, h, new PathTestState(), new Color(15, 15, 15), false, new Color(5, 5, 5));
-
-
-            //initGame(w, h, new MenuState(), new Color(15, 15, 15), false, new Color(5, 5, 5));
-
-
+            int w = 640;
+            int h = 360;
+            initGame(w, h, new Revvolvver.MenuState(), new Color(15, 15, 15), true, new Color(5, 5, 5));
 
             FlxG.debug = true;
             FlxG.zoom = 1280 / w;
