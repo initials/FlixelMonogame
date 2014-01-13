@@ -644,10 +644,18 @@ namespace Revvolvver
 
 
                 if (item1.Length == 12)
-
-                    _history.Add(new bool[] { bool.Parse(item1[0]), bool.Parse(item1[1]), bool.Parse(item1[2]), bool.Parse(item1[3]), 
+                    try
+                    {
+                        _history.Add(new bool[] { bool.Parse(item1[0]), bool.Parse(item1[1]), bool.Parse(item1[2]), bool.Parse(item1[3]), 
                     bool.Parse(item1[4]), bool.Parse(item1[5]), bool.Parse(item1[6]), bool.Parse(item1[7]),
                     bool.Parse(item1[8]), bool.Parse(item1[9]), bool.Parse(item1[10]), bool.Parse(item1[11])});
+                    }
+                    catch (Exception)
+                    {
+                        
+                        //throw;
+                    }
+
 
                 //Console.WriteLine(item1.Length + " -- " + item1[1]);
 
